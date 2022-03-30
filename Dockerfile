@@ -1,3 +1,3 @@
 FROM openjdk:8 
-COPY /target/spring-petclinic-1.5.1.jar /home/spring-petclinic-1.5.1.jar 
-CMD ["java","-jar","/home/spring-petclinic-1.5.1.jar"]
+COPY /target/demo-0.0.1-SNAPSHOT.jar /home/jenkins/demo-0.0.1-SNAPSHOT.jar
+CMD ["java","-jar","/home/jenkins/demo-0.0.1-SNAPSHOT.jar"]
