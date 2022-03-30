@@ -1,3 +1,3 @@
 FROM openjdk:8 
-COPY /target/demo-0.0.1-SNAPSHOT.jar /home/jenkins/demo-0.0.1-SNAPSHOT.jar
-CMD ["java","-jar","/home/jenkins/demo-0.0.1-SNAPSHOT.jar"]
+COPY /var/lib/jenkins/workspace/Pipeline-Java/target/docker-jenkins-integration-sample.jar /home/jenkins/docker-jenkins-integration-sample.jar
+CMD ["java","-jar","/home/jenkins/docker-jenkins-integration-sample.jar"]
