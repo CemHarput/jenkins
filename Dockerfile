@@ -1,4 +1,4 @@
 FROM openjdk:8
 RUN mvn clean package
-COPY /target/docker-jenkins-integration-sample.jar /home/jenkins/docker-jenkins-integration-sample.jar
-CMD ["java","-jar","/home/jenkins/docker-jenkins-integration-sample.jar"]
+COPY /target/docker-jenkins-integration-sample.jar /home/jenkins/compiled-java-projects/
+CMD ["java","-jar","docker-jenkins-integration-sample.jar"]
